@@ -2,10 +2,12 @@
 	margin: 0;
 	padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    appearance: none;
 }
 
 body {
-    background-color: rgb(34, 33, 33);
+    background-color: #202124;
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -23,6 +25,7 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 12px;
 }
 
 li{
@@ -38,46 +41,54 @@ section {
     flex-direction: column;
 }
 
-section div{
-    padding: 10px;
+section div span{
+    color: rgba(245, 245, 245, 0.7);
+    margin: 0px;
+    font-size: 10px;
 }
 
-section div ul{
-    display: flex;
-    align-items: center;
+section div a{
+    color: #8ab4f8;
+    text-decoration: none;
+    margin: 0px 3px;
+    font-size: 10px;
 }
 
-section div ul li{
-    margin: 0 5px;
-    padding: 0 0 0 0;
-    font-size: small;
-    color: whitesmoke;
+section div a:hover{
+    text-decoration-line: underline;
 }
 
 #search {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 500px;
-    height: 40px;
+    border-radius: 20px;
+    width: 400px;
+    height: 35px;
     padding: 0 40px;
-    font-size: larger;
-    background-color: transparent;
-    opacity: 30%;
-    border: 1px solid white;
+    font-size: 12px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    background-color: #202124;
     color: whitesmoke;
+}
+
+#search:hover{
+    background-color: #505154;
+    border: 1px solid rgb(80, 81, 84);
+}
+
+#search:focus{
+    background-color: #505154;
+    border: 1px solid #505154;
 }
 
 #s-bar{
     position: relative;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 #s-bar img{
     position: absolute;
-    height: 25px;
+    height: 20px;
 }
 #s-icon{
     left: 20px;
@@ -86,24 +97,28 @@ section div ul li{
     right: 20px;
 }
 
+.s-button{
+    padding: 10px 0px;
+}
+
 .button{
     margin: 5px;
-    padding: 8px;
+    padding: 9px 15px;
     color: whitesmoke;
-    background-color: rgb(43, 43, 43);
+    background-color: #303134;
     border: 0px;
-    border-radius: 5px
+    border-radius: 5px;
+    font-size: 11px;
+    border: 1px solid rgb(43, 43, 43);
+}
 
+.button:hover{
+    border: 1px solid #5f6368;
 }
 
 #logo {
     justify-content: center;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 10px;
 }
 
 #profile {
@@ -118,14 +133,18 @@ footer {
 
 #profile img{
     border-radius: 50%;
-    background-color: yellow;
     height: 30px;
     width: 30px;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
 footer div{
-    background-color: rgb(26, 25, 25);
-    margin-bottom: 1px;
+    background-color: #171717;
 }
 
 footer ul{
@@ -135,12 +154,15 @@ footer ul{
 
 .footer1 {
     color: rgb(173, 173, 173);
-    padding: 15px 25px;
+    padding: 11px 25px;
+    border-bottom:1px solid #3c4043;
 }
 
 .footer2{
     color: rgb(173, 173, 173); 
-    padding: 10px 10px;
+    padding: 7px 10px;
     display: flex;
     justify-content: space-between;
 }
+
+ 
